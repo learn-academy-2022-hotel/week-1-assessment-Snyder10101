@@ -34,6 +34,19 @@ const fruit2 = "banana"
 const fruit3 = "cherry"
 const fruit4 = "kiwi"
 // Expected outcome: "cherry"
+// Function
+const bigFruit = (value1, value2) => {
+    if(value1.length > value2.length){
+      return `${value1} has more characters than ${value2}`
+    } else if(value1.length === value2.length) {
+      return `${value1} has the same amount of characters as ${value2}`
+    } else {
+      return `${value2} has more characters than ${value1}`
+    }
+  }
+  
+  // console.log(bigFruit(fruit1, fruit2))
+  // output: banana has more characters than apple
 
 // --------------------1) Create a function that takes in a number and determines if the given number is below boiling point, at boiling point, or above boiling point. Boiling point is 212 degrees Fahrenheit. Use the test variables provided below.
 
@@ -109,33 +122,68 @@ console.log(padresRun.length)
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
 // Pseudo code: 
-// put [] around "hotel 2022"
-// crate a mutator that reverse "Hotel 2022" i will use .reverse
-// console.log the variable with the mutator with the expected outcome
-// "2202 letoH"
+// 1. im going to turn my string into an array by use .split and give it its own variable
+// 2. now that the string is converted into an array i will give the elements a variable
+// 3. split the vaiables once again using same method as step one 
+// 4. give the new splits new varables 
+// 5. take my new varibales and use (.join) to turn my array into a string
 
-const currentCohort = ["Hotel 2022"]
-const HotelCohort = (currentCohort.reverse(currentCohort))
+const currentCohort = "Hotel 2022"
+console.log(currentCohort.split())
+let hotelCohort = (currentCohort.split())
+console.log(hotelCohort)
+let hotel1 ="2022"
+let hotel3 ="hotel"
+console.log(hotel1.split())
+let hotel2 = (hotel1.split())
+console.log(hotel2)
+let hotel4 = (hotel3.split())
+let hotel5 = (hotel2.join(""))
+console.log(hotel5)
+let hotel6 = (hotel4.join(""))
+console.log(hotel5, hotel6)
+// output: 2202 letoh
 // Expected output: "2202 letoH"
-console.log(HotelCohort)
+// Process : make my array into a sting give my string variables
+// maniuplate the sting by useing methods split and join
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
 // Pseudo code:
+// 1. make a variable by taking array (myNumbers) and index (givenValue1) = var (lastGivenValue1)
+// 2. i will use method lastIndexOf. to give me last index of the given value
 
 const myNumbers = [13, 34, 42, 5, 5, 10, 27, 42, 10]
 const givenValue1 = 42
+console.log(myNumbers.lastIndexOf(givenValue1))
+let lastGivenValue1 = ((myNumbers.lastIndexOf(givenValue1)))
+console.log(lastGivenValue1)
+// output: 7
 // Expected output: 7
 
 const givenValue2 = 10
+console.log(myNumbers.lastIndexOf(givenValue2))
+let lastGivenValue2 = (myNumbers.lastIndexOf(givenValue2))
+// output 8
 // Expected output: 8
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
 // Pseudo code:
-
+// 1. crate a variable using (let) and make an array with the new variable
+// 2. i need use function of decending order of numbers so i will use the method (.sort)
+// 3. in order to make my function work i need to make two arguments (a, b)
+// 4. I need to do a comparison and by an arrow function of the two arguments 
+// 5. the arguments will be palced (b - a) to put the arrray into decending largest to smallest
 const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
 // Expected output: [82, 80, 79, 77, 76, 73, 72]
-
+let tempHighToLow1 = [ 82, 80, 79, 77, 76, 73, 72]
+/// descending order///
+tempHighToLow1.sort((a, b) => b - a)
+console.log(tempHighToLow1)
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
+let tempHighToLow2 = [ 59, 68, 62, 59, 66, 67, 66]
+// descending order///
+tempHighToLow2.sort((a, b) => b - a)
+console.log(tempHighToLow2)
