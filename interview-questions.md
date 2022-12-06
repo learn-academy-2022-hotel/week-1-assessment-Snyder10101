@@ -41,7 +41,7 @@ Researched answer: Strings and arrays both hold values and are assigned variable
 
 Your answer: Pair programming involves two people, a driver and a navigator, The driver codes the information and the navigator provides it to the driver.
 
-Researched answer:
+Researched answer: Team members are less likely to have  bias , pair programming's has sharing capabilities to compare thoughts or ideas. Pair programmers gain better communication skills as a result of this. This increases the partners total information by enhancing communication the project.
 
 ## Looking Ahead: Terms for Next Week
 
